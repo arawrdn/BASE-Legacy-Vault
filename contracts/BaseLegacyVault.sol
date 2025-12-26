@@ -22,13 +22,11 @@ contract BaseLegacyVault {
         _;
     }
 
-    // Pemilik perlu panggil ini secara berkala
     function heartbeat() external onlyOwner {
         lastCheckIn = block.timestamp;
         emit Heartbeat(owner, lastCheckIn);
     }
 
-    // Waris boleh tuntut jika pemilik tidak aktif melepasi timeout
     function claimInheritance() external {
         require(msg.sender == heir, "Not the designated heir");
         require(block.timestamp > lastCheckIn + inactivityTimeout, "Owner still active");
@@ -42,6 +40,5 @@ contract BaseLegacyVault {
         emit InheritanceClaimed(heir, balance);
     }
 
-    // Untuk menerima ETH
     receive() external payable {}
 }
