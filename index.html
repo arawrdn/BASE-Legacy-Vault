@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BASE Legacy Vault | Secure Storage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background: #0f172a; color: #f8fafc; }
+        .vault-card { background: linear-gradient(145deg, #1e293b, #0f172a); border: 1px solid #94a3b8; }
+        .gold-text { color: #fbbf24; }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen p-4">
+    <div class="vault-card p-8 rounded-2xl shadow-2xl max-w-lg w-full text-center border-t-4 border-t-yellow-500">
+        <h1 class="text-3xl font-bold gold-text mb-2 tracking-tighter">LEGACY VAULT</h1>
+        <p class="text-slate-400 text-sm mb-8 italic">"Your on-chain legacy, secured on Base."</p>
+
+        <div id="auth-area" class="mb-8">
+            <appkit-button></appkit-button>
+        </div>
+
+        <div id="dapp-content" class="hidden space-y-4">
+            <div class="bg-black/40 p-4 rounded-xl text-left border border-slate-700">
+                <p class="text-xs text-slate-500 uppercase">Isi Brankas Anda:</p>
+                <p id="display-msg" class="text-lg font-medium text-white mt-1">Belum ada data</p>
+                <p id="display-bal" class="text-sm gold-text font-mono mt-1">0.00 ETH</p>
+            </div>
+
+            <input type="text" id="secret-input" placeholder="Masukkan pesan rahasia..." 
+                   class="w-full bg-slate-800 border border-slate-600 p-3 rounded-lg focus:outline-none focus:border-yellow-500">
+            
+            <input type="number" id="eth-input" placeholder="Jumlah ETH (Opsional)" 
+                   class="w-full bg-slate-800 border border-slate-600 p-3 rounded-lg focus:outline-none focus:border-yellow-500">
+
+            <div class="grid grid-cols-2 gap-4">
+                <button id="deposit-btn" class="bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-3 rounded-xl transition-all">DEPOSIT</button>
+                <button id="withdraw-btn" class="bg-slate-700 hover:bg-slate-600 text-white font-bold py-3 rounded-xl transition-all">WITHDRAW</button>
+            </div>
+        </div>
+        
+        <p id="status" class="mt-4 text-xs text-slate-500"></p>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
