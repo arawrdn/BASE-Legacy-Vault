@@ -14,7 +14,7 @@ BASE Legacy Vault is a decentralized application (dApp) built on the Base Layer 
 
 * **Smart Contracts:** Solidity (EVM)
 * **Development Framework:** Hardhat / Foundry
-* **Network:** Base (Mainnet/Sepolia)
+* **Network:** Base (Mainnet)
 * **Frontend:** React.js / Next.js
 * **Wallet Integration:** Wagmi, Viem, and WalletConnect v2
 * **Storage:** IPFS / Arweave
