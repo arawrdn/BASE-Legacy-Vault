@@ -1,3 +1,7 @@
+![Built on Base](https://img.shields.io/badge/Built%20on%20Base-blue?logo=coinbase)
+![Base Ecosystem Project](https://img.shields.io/badge/Base%20Ecosystem%20Project-0052ff?logo=coinbase)
+![Base Verified Contract](https://img.shields.io/badge/Base%20Verified%20Contract-0f67ff?logo=coinbase)
+
 # BASE Legacy Vault
 
 BASE Legacy Vault is a decentralized application (dApp) built on the Base Layer 2 network. It is designed to provide a secure, immutable, and permanent repository for digital legacies and historical documentation, ensuring that vital records are preserved for future generations using Ethereum's security and Base's scalability.
